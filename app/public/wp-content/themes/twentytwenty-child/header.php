@@ -30,6 +30,9 @@
 		wp_body_open();
 		?>
 
+		<?php
+		if ( ! is_page_template( array( 'templates/template-canvas.php' ) ) ) {
+		?>
 		<header id="site-header" class="header-footer-group" role="banner">
 
 			<div class="header-inner section-inner">
@@ -185,3 +188,4 @@
 		<?php
 		// Output the menu modal.
 		get_template_part( 'template-parts/modal-menu' );
+		}

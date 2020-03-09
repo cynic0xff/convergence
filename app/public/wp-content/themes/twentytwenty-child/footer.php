@@ -12,6 +12,9 @@
  */
 
 ?>
+			<?php
+			if ( ! is_page_template( array( 'templates/template-canvas.php' ) ) ) {
+			?>
 			<footer id="site-footer" role="contentinfo" class="header-footer-group">
 
 				<div class="section-inner">
@@ -25,7 +28,7 @@
 								_x( 'Y', 'copyright date format', 'twentytwenty' )
 							);
 							?>
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo bloginfo( 'name' ); ?></a>
 						</p><!-- .footer-copyright -->
 
 						<p class="powered-by-wordpress">
@@ -54,7 +57,7 @@
 				</div><!-- .section-inner -->
 
 			</footer><!-- #site-footer -->
-
+			<?php } ?>
 		<?php wp_footer(); ?>
 
 	</body>
