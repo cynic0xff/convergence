@@ -121,6 +121,9 @@ if ($requestResult === false) {
 }  
 
 $response = json_decode($requestResult,true);
-echo json_encode($requestResult);
+
+//var_dump($response["rates"][0]["totalPrice"]);
+echo $response["rates"][0]["totalPrice"];
+//echo json_encode($requestResult);
 
 ?>

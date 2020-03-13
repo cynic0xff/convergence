@@ -271,7 +271,7 @@ $(document).ready(function() {
             {
                 //if we are successfull set the shipping informaiton
                 //$('#shipping_cost').html("Name: " + data.name + "<br>Job: " + data.job + "<br>id: " + data.id + "<br>Created: " + data.createdAt);
-                $('#shipping_cost').html(data.rates[0]);
+                $('#shipping_cost').text(data);
 
                 console.log(data);
 
